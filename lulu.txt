@@ -1,0 +1,177 @@
+_G.CorrectKeyIs = "KEY"
+_G.GetKeyWebsite = "WebLink"
+
+repeat wait() until game:IsLoaded()
+local AlchemyKey_UI = Instance.new("ScreenGui")
+local ShadowFrame = Instance.new("Frame")
+local ShadowCorner = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local MainCorner = Instance.new("UICorner")
+local BackgroundGradient = Instance.new("UIGradient")
+local Name = Instance.new("TextLabel")
+local Description = Instance.new("TextLabel")
+local KeyBox = Instance.new("TextBox")
+local BoxCorner = Instance.new("UICorner")
+local Credit = Instance.new("TextLabel")
+local Submit = Instance.new("TextButton")
+local SubmitCorner = Instance.new("UICorner")
+local Button1 = Instance.new("TextButton")
+local B1Corner = Instance.new("UICorner")
+local Button2 = Instance.new("TextButton")
+local B2Corner = Instance.new("UICorner")
+AlchemyKey_UI.Name = "RevizUI-BlueFade"
+AlchemyKey_UI.Parent = game.CoreGui
+AlchemyKey_UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ShadowFrame.Name = "ShadowFrame"
+ShadowFrame.Parent = AlchemyKey_UI
+ShadowFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ShadowFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ShadowFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+ShadowFrame.Size = UDim2.new(0, 450, 0, 200)
+ShadowFrame.ZIndex = 0
+ShadowCorner.Name = "ShadowCorner"
+ShadowCorner.Parent = ShadowFrame
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ShadowFrame
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.Position = UDim2.new(0.48666665, 0, 0.469999969, 0)
+MainFrame.Size = UDim2.new(0, 450, 0, 200)
+MainFrame.ZIndex = 0
+MainCorner.Name = "MainCorner"
+MainCorner.Parent = MainFrame
+BackgroundGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(252, 3, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(112, 0, 103))}
+BackgroundGradient.Rotation = 45
+BackgroundGradient.Name = "BackgroundGradient"
+BackgroundGradient.Parent = MainFrame
+Name.Name = "Name"
+Name.Parent = MainFrame
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.ClipsDescendants = true
+Name.Position = UDim2.new(0, 0, 0.0700000003, 0)
+Name.Size = UDim2.new(0, 448, 0, 39)
+Name.Font = Enum.Font.GothamBold
+Name.Text = "Name Hub"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextSize = 30.000
+Description.Name = "Description"
+Description.Parent = MainFrame
+Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description.BackgroundTransparency = 1.000
+Description.ClipsDescendants = true
+Description.Position = UDim2.new(0.00444444455, 0, 0.25, 0)
+Description.Size = UDim2.new(0, 448, 0, 17)
+Description.Font = Enum.Font.Gotham
+Description.Text = "Description"
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description.TextSize = 16.000
+KeyBox.Name = "KeyBox"
+KeyBox.Parent = MainFrame
+KeyBox.AnchorPoint = Vector2.new(0.5, 0.5)
+KeyBox.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
+KeyBox.ClipsDescendants = true
+KeyBox.Position = UDim2.new(0.5, 0, 0.5, 0)
+KeyBox.Size = UDim2.new(0, 422, 0, 26)
+KeyBox.ClearTextOnFocus = false
+KeyBox.Font = Enum.Font.Arial
+KeyBox.PlaceholderColor3 = Color3.fromRGB(120, 120, 120)
+KeyBox.PlaceholderText = "Type Key Here ..."
+KeyBox.Text = ""
+KeyBox.TextColor3 = Color3.fromRGB(30, 30, 30)
+KeyBox.TextSize = 16.000
+BoxCorner.Name = "BoxCorner"
+BoxCorner.Parent = KeyBox
+Credit.Name = "Credit"
+Credit.Parent = MainFrame
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.ClipsDescendants = true
+Credit.Position = UDim2.new(0.0222222228, 0, 0.894999981, 0)
+Credit.Size = UDim2.new(0, 432, 0, 21)
+Credit.Font = Enum.Font.GothamBold
+Credit.Text = "\85\73\32\66\121\32\65\108\99\104\101\109\121\35\57\57\57\57"
+Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit.TextSize = 16.000
+Credit.TextXAlignment = Enum.TextXAlignment.Right
+Submit.Name = "Submit"
+Submit.Parent = MainFrame
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Submit.BackgroundTransparency = 0.800
+Submit.Position = UDim2.new(0.282222211, 0, 0.599999964, 0)
+Submit.Size = UDim2.new(0, 195, 0, 23)
+Submit.Font = Enum.Font.GothamBold
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit.TextSize = 20.000
+SubmitCorner.Name = "SubmitCorner"
+SubmitCorner.Parent = Submit
+Button1.Name = "Button1"
+Button1.Parent = MainFrame
+Button1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button1.BackgroundTransparency = 0.800
+Button1.Position = UDim2.new(0.146666661, 0, 0.747105062, 0)
+Button1.Size = UDim2.new(0, 155, 0, 23)
+Button1.Font = Enum.Font.GothamBold
+Button1.Text = "Button 1"
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextSize = 20.000
+B1Corner.Name = "B1Corner"
+B1Corner.Parent = Button1
+Button2.Name = "Button2"
+Button2.Parent = MainFrame
+Button2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button2.BackgroundTransparency = 0.800
+Button2.Position = UDim2.new(0.50666666, 0, 0.747105062, 0)
+Button2.Size = UDim2.new(0, 155, 0, 23)
+Button2.Font = Enum.Font.GothamBold
+Button2.Text = "Button 2"
+Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2.TextSize = 20.000
+B2Corner.Name = "B2Corner"
+B2Corner.Parent = Button2
+Name.Text = "Miku Hub"
+Description.Text = "Script Hub support PC/Mobile No.1 !!!"
+Button1.Text = "Discord"
+Button2.Text = "Get Key"
+spawn(function()
+	pcall(function()
+		while wait(1) do
+            Credit.Text = "\85\73\32\66\121\32\65\108\99\104\101\109\121\35\57\57\57\57"
+		end
+	end)
+end)
+getgenv().Continue = true
+_G.Alchemy449329528973 = _G.CorrectKeyIs
+repeat wait(1) until getgenv().Continue == true
+if getgenv().Continue == true then
+    Button1.MouseButton1Click:Connect(function()
+        Button1.Text = "Copy Success"
+        setclipboard("https://discord.gg/fp3BHRRH8x")
+        wait(0.5)
+        Button1.Text = "Discord"
+    end)
+    Button2.MouseButton1Click:Connect(function()
+        Button2.Text = "Copy Success"
+        setclipboard(_G.GetKeyWebsite)
+        wait(0.5)
+        Button2.Text = "Get Key"
+    end)
+    Submit.MouseButton1Click:Connect(function()
+        local KeyInput = KeyBox.Text
+        local CorrectKey = _G.Alchemy449329528973
+        if KeyInput == CorrectKey then
+            _G.AlchemyIsBestHubAndCodeingDev = true
+            wait(1)
+            ShadowFrame.Position = UDim2.new(1000, 0, 1000, 0)
+        else
+            KeyBox.Text = ""
+            KeyBox.PlaceholderText = "Incorrect Key !"
+            wait(0.5)
+            KeyBox.PlaceholderText = "Type Key Here ..."
+        end
+    end)
+end
+-------------------------------------------------------------------------------------------------
+repeat wait(1) until _G.AlchemyIsBestHubAndCodeingDev == true
+-------------------------------------------------------------------------------------------------
