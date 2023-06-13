@@ -513,18 +513,3 @@ local function ILVZM_fake_script() -- Newsland_teleport.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(teleport)
 end
-coroutine.wrap(ILVZM_fake_script)() 
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
